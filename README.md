@@ -7,21 +7,43 @@ The example launches an example IoT project such as a VPC, VSwitch, NAT gateway,
 
 ### Minimal 
 
-cd minimal
-terraform plan
-terraform apply
-terraform destroy -force
+This is a minimal "all in one" configuration to familiarize yourself with terraform.
+
+* Set up environment and Navigate to minimal
+
+        # Download terraform and place in /usr/bin/ or somewhere on PATH
+        export ALICLOUD_ACCESS_KEY="your_aliyun_access_key"
+        export ALICLOUD_SECRET_KEY="your_aliyun_secret_key"
+        export ALICLOUD_REGION="cn-shanghai" 
+        cd minimal
+
+* See what terraform is going to do
+        
+        terraform plan
+
+* Apply terraform 
+
+        terraform apply
+
+* Destroy the example
+
+        terraform destroy -force
 
 ### Get up and running
 
 The cluster is controlled from the "main" folder:
-cd main
+
+* Navigate to main
+
+        cd main
 
 * Initialize phase
-		terraform init
+
+        terraform init
 
 * Get phase
-		terraform get
+		
+        terraform get
 
 * Planning phase
 
@@ -36,6 +58,6 @@ cd main
 		terraform destroy
 
 * Forget Everything (Dangerous! Will forget everything it knows)
-		rm -rf .terraform
-		rm terraform.tfstate*
+		
+        rm -rf .terraform terraform.tfstate*
 
