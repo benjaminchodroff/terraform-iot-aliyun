@@ -3,6 +3,7 @@ Example terraform for an IoT project in Aliyun cloud
 
 ## Description
 The example launches an example IoT project such as a VPC, VSwitch, NAT gateway, ECS, SecurityGroups. You may want to explore the "minimal" terraform first, and then try the full project in "main"
+![IoT Example Project in VPC](iotexample.png)
 
 ### Minimal 
 
